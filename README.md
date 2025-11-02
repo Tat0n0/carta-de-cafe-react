@@ -6,6 +6,7 @@ Incluye un sistema **CRUD completo** para gestionar tanto las categorías como l
 ## Instalación y ejecución
 
 Clonar el repositorio o descargar el proyecto. en https://github.com/Tat0n0/carta-de-cafe-react
+
 Instalar las dependencias:  
 npm install
 npm run dev
