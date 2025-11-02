@@ -1,11 +1,11 @@
-Carta Café ☕
+Carta Café 
 
 Aplicación web desarrollada con **React** que muestra una carta de productos dividida por categorías.  
 Incluye un sistema **CRUD completo** para gestionar tanto las categorías como los productos del menú.
 
 ## Instalación y ejecución
 
-Clonar el repositorio o descargar el proyecto.  
+Clonar el repositorio o descargar el proyecto. en https://github.com/Tat0n0/carta-de-cafe-react
 Instalar las dependencias:  
 npm install
 npm run dev
