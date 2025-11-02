@@ -35,3 +35,54 @@ hr {
   width: 80%;
   margin: 20px auto;
 }
+.add-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #fff;
+  border: 1px solid #4a1f1a;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  font-family: inherit;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.add-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(253, 253, 253, 0.1);
+  border: 2px solid #4a1f1a;
+  color: #4a1f1a;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  transition: all 0.15s ease-in-out;
+}
+
+.add-btn:hover {
+  background-color: rgba(74, 31, 26, 0.18);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.add-btn:active {
+  transform: scale(0.97);
+}
+
+.add-btn-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}

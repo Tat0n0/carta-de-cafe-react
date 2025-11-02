@@ -1,17 +1,150 @@
-.item {
+.section {
+  margin: 30px auto;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.section-title {
   display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 700;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #000;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.section-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 70px 50px;
+  align-items: center;
+  column-gap: 12px;
   padding: 6px 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #1a120d;
+  white-space: nowrap;
 }
 
 .item-name {
-  font-weight: 700;
+  font-weight: 600;
+  color: #1a120d;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .item-price {
-  min-width: 70px;
+  font-weight: 600;
+  color: #1a120d;
   text-align: right;
-  font-variant-numeric: tabular-nums;
+  justify-self: end;
+  width: 100%;
+}
+
+.item-actions {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+  object-fit: contain;
+}
+
+.section-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.section-actions .icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.product-form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.product-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+.product-form input {
+  border: 1px solid #4a1f1a;
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-size: 0.9rem;
+  width: 140px;
+  background-color: #fff;
+  color: #1a120d;
+}
+
+.product-form input:focus {
+  outline: none;
+  border-color: #6b2d23;
+  background-color: #fffaf2;
+}
+
+.add-product-btn,
+.save-btn,
+.cancel-btn {
+  background-color: #4a1f1a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  white-space: nowrap;
+}
+
+.add-product-btn:hover,
+.save-btn:hover,
+.cancel-btn:hover {
+  background-color: #6b2d23;
 }

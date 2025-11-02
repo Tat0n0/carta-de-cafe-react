@@ -1,16 +1,73 @@
-# React + Vite
+Carta Café ☕
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con **React** que muestra una carta de productos dividida por categorías.  
+Incluye un sistema **CRUD completo** para gestionar tanto las categorías como los productos del menú.
 
-Currently, two official plugins are available:
+## Instalación y ejecución
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clonar el repositorio o descargar el proyecto.  
+Instalar las dependencias:  
+npm install
+npm run dev
 
-## React Compiler
+src/
+├── assets/  
+├── components/
+│ ├── Header/ Encabezado de la carta
+│ ├── Footer/ Pie de página
+│ ├── MenuSection/ Categorías por secciones
+│ └── MenuItem/ Productos individuales con precio
+├── App.jsx Componente principal
+├── App.css Estilos globales
+└── main.jsx Punto de entrada
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Categorías
 
-## Expanding the ESLint configuration
+Añadir categoría:
+Se crea una nueva categoría con un icono predeterminado.
+El botón principal “Añadir Categoría” ejecuta la función addCategory,
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Editar categoría:
+Desde cada bloque de categoría se puede modificar el nombre y el icono.
+Se actualiza el estado con editCategory.
+
+Borrar categoría:
+Si la categoría contiene productos, aparece un mensaje de confirmación antes de eliminarla.
+La función deleteCategory elimina el objeto del estado principal. Ejemplo; (La categoría "Desserts" tiene 4 producto(s). ¿Eliminarla con todos sus productos?)
+
+## Productos
+
+Añadir producto:
+En cada categoría se muestra un pequeño formulario para introducir nombre y precio.
+Se ejecuta addProduct y se añade el producto al array products correspondiente.
+
+Editar producto:
+Cada producto incluye un icono de edición que permite modificar sus datos.
+La función editProduct actualiza nombre y precio sin afectar al resto del menú.
+
+Borrar producto:
+El icono de papelera permite eliminar un producto individual mediante deleteProduct.
+Antes de eliminar un producto, aparece un mensaje de confirmación con el nombre del artículo.
+Una vez confirmado, el producto se elimina del listado y se muestra una alerta informando de la eliminación.
+Ejemplo: (¿Seguro que quieres eliminar el producto "French Vanilla"?
+Producto "French Vanilla" eliminado correctamente.)
+
+## Diseño
+
+Estructura basada en componentes reutilizables.
+Tipografía Impact para los títulos.
+Alineación de precios en columna fija.
+Formularios simples y centrados.
+Iconos personalizados en formato PNG y SVG.
+
+## Tecnologías utilizadas
+
+React 19.1
+Vite
+JavaScript (ES6+)
+CSS modular
+HTML5
+
+## Autor
+
+Proyecto realizado por Aridane Quevedo Cabrera, como práctica de desarrollo con React, implementando un CRUD completo sobre una carta de productos de cafetería.
